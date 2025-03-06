@@ -1,0 +1,28 @@
+ul {
+    color: rgb(53, 211, 82);
+    list-style-type: none;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(241, 243, 244);
+    text-align: center;
+    border-radius: 20px;
+    border-bottom: 5px solid rgb(77, 221, 10);
+}
+
+.relative {
+    background-color: rgb(2, 128, 132);
+    position: relative;
+    width: 1500px;
+    height: 400px;
+}
+
+.absolute {
+    border: rgb(28, 163, 28);
+    text-align: center;
+    border-radius: 1000px;
+    width: 200px;
+    height: 100px;
+    left: 600px;
+    top: 75px;
+    position: absolute;
+}
