@@ -1,0 +1,19 @@
+div { 
+    background-color: rgb(3, 108, 111); color: rgb(8, 5, 20);
+}
+
+.relative { 
+    border: solid 5px rgb(158, 184, 29);
+    position: relative;
+    width: 1600px;
+    height: 750px;
+}
+
+.absolute { 
+    align-items: center;
+    width: 1200px;
+    height: 600px;
+    right: 250px;
+    top: 50px;
+    position: absolute;
+}
