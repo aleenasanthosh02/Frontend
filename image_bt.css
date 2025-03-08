@@ -1,0 +1,22 @@
+.relative{
+    width:510px;;
+    height: 210px;
+    border: 10px solid rgb(2, 62, 100);
+    position: relative;
+    font-size: 18px;
+    background: rgba(35, 139, 243, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0px;
+}
+body{
+    position: relative;
+    left: 850px;
+    top: 500px;
+    
+}
+img{
+    width: 500px;
+    height: 200px;
+    opacity: 1.0;
+}
