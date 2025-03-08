@@ -1,0 +1,30 @@
+a{
+    
+    color: chartreuse;
+}
+.h1{
+    font-size: small;
+    color: rgb(223, 99, 4);
+}
+
+.relative {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background: rgb(197, 159, 206);
+    width: 120px;
+    height: 40px; 
+    color: black;
+    text-align: center;
+    padding: 10px;
+    line-height: 40px;
+    border-radius: 10px;
+    transition:0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.relative:hover {
+    background: rgb(150, 100, 180);
+    transform: scale(1.1);
+    color: white;
+}
+
