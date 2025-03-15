@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pattern printing</title>
+    </head>
+    <body onload="pattern()">
+        <script>
+            function pattern()
+            {
+                num=1
+                count=1
+                for(i=1;num<=15;i++)
+                {
+                    for(j=1;j<=i && num<=15;j++)
+                    {
+                        document.write(num + " ")
+                        num++
+                    }
+                    document.write("<br>")
+                }
+            }
+        </script>
+    </body>
+</html>

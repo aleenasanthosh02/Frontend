@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Coding Challenge</title>
+    <style>
+        body {
+            background-color: light rgb(1, 122, 92); 
+            font-family: Arial, sans-serif;
+            color: aliceblue;
+        }
+
+        table {
+            background-color: rgb(0, 65, 71); 
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px gray; 
+            width: 1200px;
+            height: 800px;
+        }
+
+
+        input[type="submit"], input[type="reset"] {
+            background-color: rgb(21, 203, 136);
+            color: rgb(255, 255, 255);
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: rgb(13, 183, 146);
+        }
+    </style>
+<script>
+    function form()
+    {
+        var firstName=document.getElementById("fname").value
+        var lastName=document.getElementById("lname").value
+        var email=document.getElementById("email").value
+        var mobile=document.getElementById("mobile").value
+        var gender=document.querySelector('input[name="gender"]:checked');
+        var city=document.getElementById("city").value
+        var pincode=document.getElementById("pincode").value
+        var state=document.getElementById("state").value
+        var country=document.getElementById("country").value
+        var course=document.querySelector('input[name="course"]:checked');
+        var address=document.getElementById("address").value
+        var dob=document.getElementById("dob").value
+    }
+
+
+</script>
+</head>
+<body>
+    <form id="form" onsubmit="Form()">
+             <table align="center">
+                    <tr>
+                        <th>FIRST NAME</th>
+                        <td> <input type="text" id="fname"> <small>(max 30 characters and A-Z)</small> </td>
+                    </tr>
+                    <tr>
+                        <th>LAST NAME</th>
+                        <td> <input type="text" id="lname"> <small>(max 30 characters a-z and A-Z)</small> </td>
+                    </tr>
+                    <tr>
+                        <th>DATE OF BIRTH</th>
+                        <td>
+                            <select><option>DAY</option></select>
+                            <select><option>MONTH</option></select>
+                            <select><option>YEAR</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>EMAIL ID</th>
+                        <td> <input type="email" id="email"> </td>
+                    </tr>
+                    <tr>
+                        <th> MOBILE NUMBER </th>
+                        <td> <input type="number" id="mobile"> <small>(10 digit number)</small> </td>
+                    </tr>
+                    <tr>
+                        <th>GENDER</th>
+                        <td>
+                            <input type="radio" name="r" value="Male">M
+                            <input type="radio" name="r" value="Female">F
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ADDRESS</th>
+                        <td> <textarea rows="5" cols="30"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <th>CITY</th>
+                        <td> <input type="text" id="city"> <small> (max 30 characters a-z and A-Z)</small></td>
+                    </tr>
+                    <tr>
+                        <th>PIN CODE</th>
+                        <td> <input type="number" id="pin"><small> (6 digit number)</small> </td>
+                    </tr>
+                    <tr>
+                        <th>STATE</th>
+                        <td> <input type="text" id="state"><small> (max 30 characters a-z and A-Z)</small></td>
+                    </tr>
+                    <tr>
+                        <th>COUNTRY</th>
+                        <td> <select id="country">
+                                <option>select</option>
+                                <option>INDIA</option>
+                                <option>GERMANY</option>
+                                <option>PAKISTAN</option>
+                                <option>GEORGIA</option>
+                                <option>BRAZIL</option>
+                                <option>AMERICA</option>
+                            </select> </td>
+                    </tr>
+    
+                    <tr>
+                        <th>COURSES APPLIED FOR</th>
+                        <td>
+                            <input type="radio" name="r" value="Php">Php
+                            <input type="radio" name="r" value="Java">Python
+                            <input type="radio" name="r" value="Python">Java
+                            <input type="radio" name="r" value="C++">Digital Marketing
+                        </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2">
+                                <input type="Submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+    </body>
+</html>
